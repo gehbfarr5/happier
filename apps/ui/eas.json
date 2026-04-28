@@ -1,9 +1,9 @@
 {
   "cli": {
     "version": ">= 14.2.0",
-    "appVersionSource": "remote"
+    "appVersionSource": "remote",
+    "projectId": "02aa0230-1b55-4cca-8d9c-09187e98eb44"
   },
-  "projectId": "02aa0230-1b55-4cca-8d9c-09187e98eb44",
   "build": {
     "base": {
       "node": "22.14.0",
