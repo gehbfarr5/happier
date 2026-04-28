@@ -60,7 +60,7 @@ if (appLocalConfigModule && typeof appLocalConfigModule === 'object') {
 const DEFAULTS = {
     owner: "gehbfarr5",
     slug: "happier",
-    easProjectId: "",  // Let EAS create project automatically
+    easProjectId: "02aa0230-1b55-4cca-8d9c-09187e98eb44",
     linkHost: "app.happier.dev",
 };
 
