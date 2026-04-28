@@ -65,8 +65,8 @@ const APP_ENVIRONMENT_CONFIGS = {
     }),
     preview: buildRingBackedConfig('preview', {
         name: 'Happier (preview)',
-        iosBundleId: 'dev.happier.app.preview',
-        androidPackage: 'dev.happier.app.preview',
+        iosBundleId: 'dev.happier.app.preview.gehbfarr5',
+        androidPackage: 'dev.happier.app.preview.gehbfarr5',
         scheme: 'happier-preview',
         enableAssociatedDomains: false,
     }),

@@ -58,9 +58,9 @@ if (appLocalConfigModule && typeof appLocalConfigModule === 'object') {
 }
 
 const DEFAULTS = {
-    owner: "happier-dev",
+    owner: "gehbfarr5",
     slug: "happier",
-    easProjectId: "2a550bd7-e4d2-4f59-ab47-dcb778775cee",
+    easProjectId: "02aa0230-1b55-4cca-8d9c-09187e98eb44",
     linkHost: "app.happier.dev",
 };
 
