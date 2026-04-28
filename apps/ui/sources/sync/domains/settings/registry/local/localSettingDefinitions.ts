@@ -303,6 +303,13 @@ export const LOCAL_SETTING_DEFINITIONS = defineSettingDefinitions({
         storageScope: 'local',
         analytics: { trackCurrentState: true, trackChanges: true, valueKind: 'enum', privacy: 'safe', identityScope: 'device_user' },
     },
+    keepAliveInBackgroundEnabled: {
+        schema: z.boolean(),
+        default: false,
+        description: 'Keep sessions alive in background with a foreground notification (Android only)',
+        storageScope: 'local',
+        analytics: { trackCurrentState: true, trackChanges: true, valueKind: 'boolean', privacy: 'safe', identityScope: 'device_user' },
+    },
     acknowledgedCliVersions: {
         schema: z.record(z.string(), z.string()),
         default: {},

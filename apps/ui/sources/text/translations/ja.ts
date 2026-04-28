@@ -2830,6 +2830,8 @@ localTailscale: {
       title: "このデバイスのローカル通知",
       footer: "これらの設定は、この特定のデバイスで通知がどのように表示されるかに影響します。",
       enabledSubtitle: "このデバイスでローカル通知を表示することを許可します",
+      keepAliveTitle: "バックグラウンドで維持",
+      keepAliveSubtitle: "永続的な通知でセッションをバックグラウンドで実行維持（Androidのみ）",
       readyTitle: "準備完了",
       readySubtitle: "ターンが終了したときにローカル通知を表示します",
       readyPreviewTitle: "準備完了メッセージのプレビュー",

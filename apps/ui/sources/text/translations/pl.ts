@@ -2575,6 +2575,8 @@ export const pl: TranslationStructure = {
       title: 'Powiadomienia lokalne na tym urządzeniu',
       footer: 'Te ustawienia wpływają na to, jak powiadomienia wyglądają na tym konkretnym urządzeniu.',
       enabledSubtitle: 'Zezwól temu urządzeniu na wyświetlanie lokalnych powiadomień',
+      keepAliveTitle: 'Utrzymuj aktywne w tle',
+      keepAliveSubtitle: 'Utrzymuj sesje w tle z trwałym powiadomieniem (tylko Android)',
       readyTitle: 'Gotowe',
       readySubtitle: 'Pokazuj lokalne powiadomienie, gdy tura się kończy',
       readyPreviewTitle: 'Podglądy wiadomości gotowości',

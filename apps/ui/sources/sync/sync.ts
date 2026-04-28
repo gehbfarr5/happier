@@ -369,6 +369,7 @@ class Sync {
         });
         applyInitialAppStateConnectivityGate({
             isForeground: this.isForeground,
+            keepAliveInBackgroundEnabled: false,
             pauseController: this.pauseController,
             setNetworkAllowed: setServerReachabilityNetworkAllowed,
         });
@@ -441,9 +442,14 @@ class Sync {
                   fireAndForget(this.resumeSync('app-foreground'), { tag: 'Sync.resumeSync.app-foreground' });
               } else {
                   this.isForeground = false;
-                  setServerReachabilityNetworkAllowed(false);
+                  const keepAliveInBackgroundEnabled = storage.getState().localSettings.keepAliveInBackgroundEnabled === true;
+                  setServerReachabilityNetworkAllowed(keepAliveInBackgroundEnabled);
                   log.log(`📱 App state changed to: ${nextAppState}`);
-                  this.pauseController.pause();
+                  if (keepAliveInBackgroundEnabled) {
+                      this.pauseController.resume();
+                  } else {
+                      this.pauseController.pause();
+                  }
                   try {
                       apiSocket.disconnect();
                   } catch {
@@ -491,8 +497,13 @@ class Sync {
                       }
                       if (state === 'hidden') {
                           this.isForeground = false;
-                          setServerReachabilityNetworkAllowed(false);
-                          this.pauseController.pause();
+                          const keepAliveInBackgroundEnabled = storage.getState().localSettings.keepAliveInBackgroundEnabled === true;
+                          setServerReachabilityNetworkAllowed(keepAliveInBackgroundEnabled);
+                          if (keepAliveInBackgroundEnabled) {
+                              this.pauseController.resume();
+                          } else {
+                              this.pauseController.pause();
+                          }
                           try {
                               apiSocket.disconnect();
                           } catch {

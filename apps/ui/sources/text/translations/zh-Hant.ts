@@ -2242,6 +2242,8 @@ const zhHantOverrides: DeepPartial<TranslationStructure> = {
 	            title: '此裝置的本機通知',
 	            footer: '這些控制會影響通知在此裝置上的顯示方式。',
 	            enabledSubtitle: '允許此裝置顯示本機通知',
+            keepAliveTitle: '背景保持運作',
+            keepAliveSubtitle: '使用持續通知在背景保持工作階段運作（僅限 Android）',
 	            readyTitle: '就緒',
 	            readySubtitle: '當一輪完成時顯示本機通知',
 	            readyPreviewTitle: '就緒訊息預覽',

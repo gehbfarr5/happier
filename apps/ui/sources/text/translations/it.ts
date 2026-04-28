@@ -2882,6 +2882,8 @@ export const it: TranslationStructure = {
       title: "Notifiche locali su questo dispositivo",
       footer: "Questi controlli influiscono su come le notifiche appaiono su questo dispositivo specifico.",
       enabledSubtitle: "Consenti a questo dispositivo di mostrare notifiche locali",
+      keepAliveTitle: "Mantieni attivo in background",
+      keepAliveSubtitle: "Mantieni le sessioni in esecuzione in background con una notifica persistente (solo Android)",
       readyTitle: "Pronto",
       readySubtitle: "Mostra una notifica locale quando un turno termina",
       readyPreviewTitle: "Anteprime dei messaggi pronti",

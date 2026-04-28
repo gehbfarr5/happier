@@ -2452,6 +2452,8 @@ export const zhHans: TranslationStructure = {
       title: "此设备上的本地通知",
       footer: "这些控件会影响通知在此设备上的显示方式。",
       enabledSubtitle: "允许此设备显示本地通知",
+      keepAliveTitle: "后台保持活跃",
+      keepAliveSubtitle: "使用持久通知在后台保持会话运行（仅限 Android）",
       readyTitle: "就绪",
       readySubtitle: "当一轮完成时显示本地通知",
       readyPreviewTitle: "就绪消息预览",

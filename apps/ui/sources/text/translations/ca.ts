@@ -2407,6 +2407,8 @@ export const ca: TranslationStructure = {
             title: 'Notificacions locals en aquest dispositiu',
             footer: 'Aquests controls afecten com es mostren les notificacions en aquest dispositiu concret.',
             enabledSubtitle: 'Permet que aquest dispositiu mostri notificacions locals',
+            keepAliveTitle: 'Mantén actiu en segon pla',
+            keepAliveSubtitle: 'Mantén les sessions en execución en segon pla amb una notificació persistent (només Android)',
             readyTitle: 'A punt',
             readySubtitle: 'Mostra una notificació local quan s’acabi un torn',
             readyPreviewTitle: 'Previsualitzacions dels missatges a punt',

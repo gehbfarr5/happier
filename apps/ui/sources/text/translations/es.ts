@@ -2545,6 +2545,8 @@ export const es: TranslationStructure = {
       title: 'Notificaciones locales en este dispositivo',
       footer: 'Estos controles afectan a cómo aparecen las notificaciones en este dispositivo concreto.',
       enabledSubtitle: 'Permitir que este dispositivo muestre notificaciones locales',
+      keepAliveTitle: 'Mantener activo en segundo plano',
+      keepAliveSubtitle: 'Mantener sesiones en ejecución en segundo plano con una notificación persistente (solo Android)',
       readyTitle: 'Listo',
       readySubtitle: 'Muestra una notificación local cuando termina un turno',
       readyPreviewTitle: 'Vista previa de mensajes listos',

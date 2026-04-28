@@ -324,6 +324,19 @@ export const NotificationsSettingsView = React.memo(function NotificationsSettin
                     showChevron={false}
                 />
                 <Item
+                    testID="settings-notifications-keep-alive-enabled"
+                    title={t('settingsNotifications.local.keepAliveTitle')}
+                    subtitle={t('settingsNotifications.local.keepAliveSubtitle')}
+                    icon={<Ionicons name="pulse-outline" size={29} color={theme.colors.textSecondary} />}
+                    rightElement={(
+                        <Switch
+                            value={localSettings.keepAliveInBackgroundEnabled === true}
+                            onValueChange={(value) => setLocalSetting({ keepAliveInBackgroundEnabled: Boolean(value) })}
+                        />
+                    )}
+                    showChevron={false}
+                />
+                <Item
                     title={t('settingsNotifications.local.readyTitle')}
                     subtitle={t('settingsNotifications.local.readySubtitle')}
                     icon={<Ionicons name="checkmark-circle-outline" size={29} color={theme.colors.success} />}

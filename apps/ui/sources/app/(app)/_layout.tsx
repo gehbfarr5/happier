@@ -25,6 +25,7 @@ import {
 } from '@/utils/navigation/createSocialStackScreenOptions';
 import { ActivityBadgeRuntime } from '@/activity/badges/ActivityBadgeRuntime';
 import { ActivityLocalNotificationRuntime } from '@/activity/notifications/runtime/ActivityLocalNotificationRuntime';
+import { LiveNotificationRuntime } from '@/activity/notifications/runtime/LiveNotificationRuntime';
 import { DesktopTrayRuntime } from '@/desktop/tray/DesktopTrayRuntime';
 import { useNotificationResponseRouting } from '@/activity/notifications/runtime/useNotificationResponseRouting';
 import { createAppStackScreenOptions } from '@/components/navigation/createAppStackScreenOptions';
@@ -251,6 +252,7 @@ export default function RootLayout() {
         <>
             <ActivityBadgeRuntime />
             <ActivityLocalNotificationRuntime />
+            <LiveNotificationRuntime />
             <DesktopTrayRuntime />
             {debugRouterEnabled && Platform.OS === 'web' ? (
                 <View

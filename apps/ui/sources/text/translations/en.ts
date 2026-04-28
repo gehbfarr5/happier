@@ -2366,6 +2366,8 @@ export const en = {
             title: 'Device notifications',
             footer: 'Overrides synced account settings on this device.',
             enabledSubtitle: 'Allow local notifications on this device',
+            keepAliveTitle: 'Keep alive in background',
+            keepAliveSubtitle: 'Keep sessions running in background with a persistent notification (Android only)',
             readyTitle: 'Ready',
             readySubtitle: 'Show a local notification when a turn finishes',
             readyPreviewTitle: 'Ready message previews',
